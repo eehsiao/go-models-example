@@ -6,7 +6,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	lib "github.com/eehsiao/go-models-lib"
+	model "github.com/eehsiao/go-models"
 	mysql "github.com/eehsiao/go-models-mysql"
 	redis "github.com/eehsiao/go-models-redis"
 )
@@ -68,7 +68,7 @@ func main() {
 		}
 
 		for _, u := range users {
-			if serialStr, err = lib.Serialize(u); err == nil {
+			if serialStr, err = model.Serialize(u); err == nil {
 				redKey := u.Host + u.User
 				keyValues[redKey] = serialStr
 				// HSet is github.com/go-redis/redis original command
