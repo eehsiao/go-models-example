@@ -6,5 +6,5 @@ require (
 	github.com/eehsiao/go-models v0.0.3
 	github.com/eehsiao/go-models-mysql v0.0.3
 	github.com/eehsiao/go-models-redis v0.0.3
-	github.com/eehsiao/sqlbuilder v0.0.3 // indirect
+	github.com/eehsiao/sqlbuilder v0.0.6
 )
